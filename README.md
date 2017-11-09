@@ -1,10 +1,10 @@
-Ubiq Network Intelligence API
+Ellaism Network Intelligence API
 ============
 
-This is the backend service which runs along with ubiq and tracks the network status, fetches information through JSON-RPC and connects through WebSockets to the [ubiq netstats page](http://ubiq.darcr.us) to feed information.
+This is the backend service which runs along with ubiq and tracks the network status, fetches information through JSON-RPC and connects through WebSockets to the [ellaism netstats page](https://stats.ellaism.org/) to feed information.
 
 ## Prerequisite
-* gubiq
+* go-ellaism
 * node
 * npm
 
@@ -24,12 +24,12 @@ Configure the app modifying app.json.
 	{
 		"NODE_ENV"        : "production", // tell the client we're in production environment
 		"RPC_HOST"        : "localhost", // ubiq JSON-RPC host
-		"RPC_PORT"        : "8588", // ubiq JSON-RPC port
-		"LISTENING_PORT"  : "30388", // ubiq listening port (only used for display)
+		"RPC_PORT"        : "8545", // ubiq JSON-RPC port
+		"LISTENING_PORT"  : "30303", // ubiq listening port (only used for display)
 		"INSTANCE_NAME"   : "", // whatever you wish to name your node
 		"CONTACT_DETAILS" : "", // add your contact details here if you wish (email/skype)
-		"WS_SERVER"       : "wss://ubiq.darcr.us", // path to ubq-netstats WebSockets api server
-		"WS_SECRET"       : "contact xocel or sigwo in the ubiq slack", // WebSockets api server secret used for login
+		"WS_SERVER"       : "https://stats.ellaism.org/", // path to ubq-netstats WebSockets api server
+		"WS_SECRET"       : "contact riddlez666 oe ellaismer in discord", // WebSockets api server secret used for login
 		"VERBOSITY"       : 2 // Set the verbosity (0 = silent, 1 = error, warn, 2 = error, warn, info, success, 3 = all logs)
 	}
 ```
