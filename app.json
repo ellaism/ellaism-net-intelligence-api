@@ -17,7 +17,7 @@
       "INSTANCE_NAME"   : "",
       "CONTACT_DETAILS" : "",
       "WS_SERVER"       : "http://stats.ellaism.org/",
-      "WS_SECRET"       : "contact riddlez666 or ellaismer in discord.",
+      "WS_SECRET"       : "ellaismstats",
       "VERBOSITY"       : 2
     }
   }
